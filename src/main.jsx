@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {BrowseRouter, Routes, Route} from 'react-router-dom';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 //Styles
 import './index.css'
 //Pages
@@ -12,7 +12,7 @@ import Search from './pages/Search'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowseRouter>
+    <BrowserRouter>
         <Routes>
            <Route element={<App/>}>
               <Route path="/" element={<Home />}/>
@@ -20,6 +20,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
               <Route path="search" element={<Search />}/>
            </Route>
         </Routes>
-    </BrowseRouter>
+    </BrowserRouter>
   </React.StrictMode>
 )
